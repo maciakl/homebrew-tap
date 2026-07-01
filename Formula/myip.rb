@@ -1,21 +1,21 @@
-class Myip < Formula
-  desc "A simple command-line tool to find and display your public/local IP address"
-  homepage "https://github.com/maciakl/myip"
-  version "0.1.1"
+class Weather < Formula
+  desc "Show weather forecast on the command line"
+  homepage "https://github.com/maciakl/weather"
+  version "0.2.1"
 
   if Hardware::CPU.arm?
     
-    url "https://github.com/maciakl/myip/releases/download/v0.1.1/myip_0.1.1_Darwin_arm64.tar.gz"
-    sha256 "f425b1340010d4d79d89ea1f0eb9bb397fa5750af04c0fa1be6570a94f68f32d"
+    url "https://github.com/maciakl/weather/releases/download/v0.2.1/weather_0.2.1_Darwin_arm64.tar.gz"
+    sha256 "a1a5118178d84561d9b2b76dc5ef3ce41d3db6fca0d7778739eed6615b9247fd"
     
   elsif Hardware::CPU.intel?
     
-    url "https://github.com/maciakl/myip/releases/download/v0.1.1/myip_0.1.1_Darwin_x86_64.tar.gz"
-    sha256 "f4725914f2e4b0bda9158d0256f3e193d370772d9aaa07efacfe7d595bb8aed2"
+    url "https://github.com/maciakl/weather/releases/download/v0.2.1/weather_0.2.1_Darwin_x86_64.tar.gz"
+    sha256 "45706c8c03cb0039334336e30dbbc156cbed2d0b445b4aeb742c520e43fa2108"
     
   end
 
   def install
-    bin.install "myip"
+    bin.install "weather"
   end
 end
