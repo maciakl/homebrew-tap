@@ -1,17 +1,17 @@
 class Mdwi < Formula
   desc "Static markdown wiki generator"
   homepage "https://github.com/maciakl/mdwi"
-  version "0.4.3"
+  version "0.4.4"
 
   if Hardware::CPU.arm?
     
-    url "https://github.com/maciakl/mdwi/releases/download/v0.4.3/mdwi_0.4.3_Darwin_arm64.tar.gz"
-    sha256 "67216e2306ecdddf759b6ddcf35195af02612ad910787913a16d7a498a32264d"
+    url "https://github.com/maciakl/mdwi/releases/download/v0.4.4/mdwi_0.4.4_Darwin_arm64.tar.gz"
+    sha256 "220fe565d8ca528274767c484b05e72be52cd9ff2146f2418628a2ee2b2fd0e7"
     
   elsif Hardware::CPU.intel?
     
-    url "https://github.com/maciakl/mdwi/releases/download/v0.4.3/mdwi_0.4.3_Darwin_x86_64.tar.gz"
-    sha256 "dbb4aa4be985fdd811e1504cc0b530f6eb4402e65b3bb975ce6ee68e37ccc6c6"
+    url "https://github.com/maciakl/mdwi/releases/download/v0.4.4/mdwi_0.4.4_Darwin_x86_64.tar.gz"
+    sha256 "97ee953a39949945ab96f50cef8729cc6620169cf4c46217cbec7afe378878db"
     
   end
 
